@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8920463c-d356-4b2a-addb-e6f4a0a6524e" name="tomcet" url="http://112.124.20.211">
+        <fileTransfer rootFolder="/usr/share/apache-tomcat-8.5.55/webapps" accessType="SFTP" host="112.124.20.211" port="22" sshConfigId="03bed54e-5940-4962-a8a2-37c7d428fd81" sshConfig="root@112.124.20.211:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="853d5c73-b725-49d9-a169-fa6d4fab3bec" name="ftp" url="http://112.124.20.211">
+        <fileTransfer host="112.124.20.211" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
