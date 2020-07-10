@@ -18,10 +18,10 @@
     <context:property-placeholder location="classpath:db.properties"/>
     <!-- 配置阿里的druid数据源 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="driverClassName" value="${driver}" />
-        <property name="url" value="${url}" />
-        <property name="username" value="${username}" />
-        <property name="password" value="${password}" />
+        <property name="driverClassName" value="${driver}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
     </bean>
 
     <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -41,7 +41,6 @@
         <property name="dataSource" ref="dataSource"></property>
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
-
 
 
 </beans>
