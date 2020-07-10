@@ -8,4 +8,5 @@ package com.cheng.pojo;
  **/
 public class User {
     private int id;
+    private String name;
 }
